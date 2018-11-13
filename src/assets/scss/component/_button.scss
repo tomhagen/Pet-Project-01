@@ -1,0 +1,18 @@
+.btn--orange{
+    @include button($color-white,$color-red,20px,35px);
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+    &:hover{
+        background-color: $color-blue2;
+        cursor: pointer;
+    }
+}

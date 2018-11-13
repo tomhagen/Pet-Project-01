@@ -1,0 +1,75 @@
+.introduce{
+    height: 407px;
+    background-color: $color-violet;
+    .introduce_content{
+        width: 90%;
+        margin: auto;
+        .ourCompany{
+            padding-top: 72px;
+            .ourCompany_header{
+                p:nth-child(1){
+                    @include text($color-blue3,12px,normal);
+                    letter-spacing: 5px;
+                }
+                p:nth-child(2){
+                    @include text($color-white,30px,bold);
+                    line-height: 34px;
+                    margin-top: -2%;
+                }
+            }
+            .ourCompany_header_content{
+                @include text($color-blue1,16px,normal);
+            }
+        }
+        .ourService{
+            padding-top: 59px;
+            .box-image{
+                position: relative;
+                .box-img{
+                    img{
+                        max-width: 375px;
+                        height: auto;
+                    }
+                }
+                .box-header{
+                    width: 80%;
+                    background-color: $color-white;
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    left: 9%;
+                    bottom: -27px;
+                    padding: 17px;
+                    text-align: center;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                    text-decoration: none;
+                    .box-title{
+                        @include text($color-blue3,16px,bold);
+                        text-decoration: none;
+                       
+                    }
+                    .box-subtitle{
+                        @include text($color-blue2,20px,bold);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.explore{
+    height: 204px;
+    background-color: $color-gray;
+    p{
+        text-align: center;
+        padding-top: 9%;
+        color: $color-blue1;
+        font-weight: bold;
+        a{
+            color: $color-blue2;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    }
+}

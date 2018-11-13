@@ -1,0 +1,126 @@
+.header{
+    height: 122px;
+        .header_content{
+            margin: auto;
+            align-items: center;
+            width: 90%;
+            .header_brand{
+               margin: 20px 36px 20px 0;
+            
+            }
+            .header_navbar{
+                width: 60%;
+                .nav_info{
+                    p{
+                        @include text($color-blue1,$fs-2,normal);
+                        a{
+                            @include text($color-blue2,$fs-2,550);
+                            text-decoration: none;
+                            &:hover{
+                                color: $color-blue1;
+                            }
+                        }
+                    }
+                    
+                    
+                    &:before{
+                        border-bottom: 1px solid #627792;
+                        content: "";    
+                        top: 48px;
+                        left: 0;
+                        right: 0;
+                        height: 0;
+                        position: absolute;
+                        opacity: 0.25;
+                        width: 47%;
+                        margin-left: 287px;
+                    }
+                } 
+                .myNavbar{
+                    
+                    .nav-item:nth-child(1){
+                    .nav-link{
+                        @include text($color-red,$fs-3,bold);
+                        
+                        .line{
+                            height: 3px;
+                            background-color: $color-blue1;
+                            display: none;
+                            margin-top: -43px;
+                            
+                        }
+                        &:hover .line{
+                            display: block;
+                                                                     ;
+}
+                    }   
+                    }
+                    .nav-item{
+                        .nav-link{
+                            .line{
+                                height: 3px;
+                                background-color: $color-blue1;
+                                display: none;
+                                margin-top: -43px;
+                                width: 100%;
+                                
+                            }
+                            @include text($color-blue2,$fs-3,bold);
+                            &:hover .line{
+                                color: $color-blue1;
+                                display: block;
+                                                    
+}
+                        }
+                    }
+                }
+            }
+            .header_extras{
+                align-items: center;
+                justify-content: space-between;
+                width: 21%;
+                position: relative;
+                .header_extras_info{
+                    .header_extras_info_icon{
+                        max-width: 100%;
+                        height: auto;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .header_extras_info_text{
+                        @include text($color-blue1,$fs-2,normal);
+                        a{
+                            @include text($color-blue2,$fs-2,bold);
+                            text-decoration: none;
+                            &:hover{
+                                color: $color-blue1;
+                                
+                            }
+                        }
+                    }
+                }
+                .header_extras_search{
+                    
+                    
+                    a{
+                        // color: $color-blue2;
+                        @include text($color-blue2,$fs-4,normal);
+                    }
+                   &:after{
+                       content: "";
+                       width: 0;
+                       left: 85%;
+                       top: 0;
+                       bottom: 0;
+                       position: absolute;
+                       border-left: 1px solid #627792;
+                       opacity: 0.25;
+                   }
+                }
+            }
+        }
+        
+       
+}

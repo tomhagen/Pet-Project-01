@@ -1,0 +1,141 @@
+
+.myCarousel{
+    position: relative;
+        img{
+            height: auto;
+            width: 100%;
+        }
+        .overlay{
+            background-color: $color-blue3;
+            mix-blend-mode: multiply;
+            width: 100%;
+            height: 627px;
+            position: absolute;
+            top: 0;
+            opacity: 0.6;
+            z-index: 1;
+        }
+        .carousel_caption1{
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 10;
+            top: 20%;
+            left: 8%;
+            width: 57%;
+            font-size: 16px;
+            .slider_title1{
+                @include text($color-white,3.75em,normal);
+            }
+            .slider_title2{
+                @include text($color-white,7em,bold);
+                position: absolute;
+                top: 27px;
+            }
+            .slider_title3{
+                @include text($color-white,7em,bold);
+                padding-top: 6%;
+                .carousel_line{
+                    border-bottom: 5px solid $color-white;
+                    width: 13%;
+                    position: absolute;
+                    top: 71%;
+                }
+                
+            }
+            .slider_title4{
+                @include text($color-white,1em,bold);
+                padding-top: 10%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .carousel_caption2{
+            
+            text-align: center;
+            position: absolute;
+            z-index: 10;
+            top: 20%;
+            left: 28%;
+            width: 46%;
+            font-size: 16px;
+            .slider_title1{
+                @include text($color-white,7em,bold);
+            }
+            .slider_title2{
+                @include text($color-white,7em,bold);
+                position: absolute;
+                top: 87px;
+                left: 11%;
+
+            }
+            .slider_title3{
+                @include text($color-white,2em,bold);
+                padding-top: 12%;
+                .carousel_line{
+                    border-bottom: 5px solid $color-white;
+                    width: 13%;
+                    position: absolute;
+                    top: 80%;
+                    left: 41%;
+                }
+                
+            }
+            .slider_title4{
+                @include text($color-white,1em,bold);
+                padding-top: 10%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .carousel_caption3{
+            text-align: right;
+            position: absolute;
+            z-index: 10;
+            top: 20%;
+            right: 8%;
+            width: 44%;
+            font-size: 16px;
+            .slider_title1{
+                @include text($color-white,3.75em,normal);
+            }
+            .slider_title2{
+                @include text($color-white,7em,bold);
+                position: absolute;
+                top: 27px;
+            }
+            .slider_title3{
+                @include text($color-white,7em,bold);
+                padding-top: 6%;
+                .carousel_line{
+                    border-bottom: 5px solid $color-white;
+                    width: 13%;
+                    position: absolute;
+                    top: 71%;
+                    right: 0%
+                }
+                
+            }
+            .slider_title4{
+                @include text($color-white,1em,bold);
+                padding-top: 10%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    // RESPONSIVE
+@media only screen and (max-width: 1200px){
+    .carousel_caption2,.carousel_caption3,.carousel_caption1{
+        font-size: 10px;
+    }
+   
+}

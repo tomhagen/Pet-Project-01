@@ -1,0 +1,61 @@
+.industries{
+    height: 607px;
+    background-color: $color-violet;
+    margin-top: 5%;
+    .industries_content{
+        width: 90%;
+        margin: auto;
+        .ourCompany{
+            padding-top: 72px;
+            .ourCompany_header{
+                p:nth-child(1){
+                    @include text($color-blue3,12px,normal);
+                    letter-spacing: 5px;
+                }
+                p:nth-child(2){
+                    @include text($color-white,30px,bold);
+                    line-height: 34px;
+                    margin-top: -2%;
+                }
+            }
+            .ourCompany_header_content{
+                @include text($color-blue1,16px,normal);
+            }
+        }
+        .ourService{
+            margin-top: 5%;
+            justify-content: center;
+            justify-content: space-between;
+            .card{
+                background-color: $color-violet;
+                border: 1px solid rgba(255,255,255,0.1);
+                width: 209px;
+                text-align: center;
+                &:hover{
+                    background-color: #241D2E;
+                    box-shadow: 5px 10px #241D2E;
+                }
+                .card-img{
+                    text-align: center;
+                    padding-top: 20px;
+                    .card-img-top{
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+                .card-body{
+                    padding: 40px 0;
+                    .card-title{
+                        @include text($color-white,16px,normal);
+                    }
+                    .card-text{
+                        @include text($color-blue1,16px,normal);
+                    }
+                }
+
+            }
+        }
+    }
+   
+
+}

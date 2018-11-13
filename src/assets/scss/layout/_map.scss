@@ -1,0 +1,30 @@
+.getStarted{
+   height: 400px;
+   position: relative;
+   img{
+    position: absolute;
+    top: 44%;
+    z-index: 1;
+    }
+   .getStarted_content{
+       width: 50%;
+       margin: auto;
+       padding-top: 5%;
+       text-align: center;
+        .getStarted_title{
+            @include text($color-blue2,18px,bold);
+        }
+        .getStarted_header{
+            @include text($color-blue2,36px,bold);
+        }
+        .getStarted_detail{
+            @include text($color-blue2,18px,normal);
+        }
+       .btn-text{
+           @include text($color-white,18px,bold);
+       }
+       position: absolute;
+       z-index: 2;
+       
+   }
+}

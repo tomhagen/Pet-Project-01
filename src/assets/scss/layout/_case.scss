@@ -1,0 +1,129 @@
+.case{
+    height: 249px;
+    background-color: $color-violet;
+    .case_content{
+        width: 90%;
+        margin: auto;
+        .ourCompany{
+            padding-top: -10%;
+            text-align: center;
+            .ourCompany_header{
+                p:nth-child(1){
+                    @include text($color-blue3,12px,normal);
+                    letter-spacing: 5px;
+                    margin-top: -5%;
+                }
+                p:nth-child(2){
+                    @include text($color-white,30px,bold);
+                    line-height: 34px;
+                    margin-top: -1%;
+                }
+            }
+        }
+        .case-detail{
+            padding-top: 2%;
+            .box-image{
+                transition:all 0.5s;
+                -webkit-transition:all 0.5s;
+                -moz-transition:all 0.5s;
+                -ms-transition:all 0.5s;
+                -o-transition:all 0.5s;
+                position: relative;
+                border-radius: 10px;
+                -webkit-border-radius: 10px    ;
+                -moz-border-radius: 10px    ;
+                -ms-border-radius: 10px  ;
+                -o-border-radius: 10px ;
+                &:hover{               
+                    transform: translateY(-10px)                ;
+                    -webkit-transform: translateY(-10px)                ;
+                    -moz-transform: translateY(-10px)                ;
+                    -ms-transform: translateY(-10px)                ;
+                    -o-transform: translateY(-10px)                ;
+                }                                
+                .box-img{
+                    text-decoration: none;
+                    
+                    
+                    .featured-img{
+                        position: absolute;
+                        z-index: 1;
+                       img{
+                        max-width: 375px;
+                        height: auto;
+                        border-radius: 10px;  
+                        -webkit-border-radius: 10px    ;                                                     
+                        -moz-border-radius: 10px    ;                                                     
+                        -ms-border-radius: 10px  ;                                                      
+                        -o-border-radius: 10px ; 
+                        
+                       }
+                    }
+                    .box-title{
+                        @include text($color-white,20px,bold);
+                        text-decoration: none;
+                        position: absolute;
+                        z-index: 11;
+                        margin: 14% 14%;
+                        text-align: center;
+                    }
+                    .logo-img{
+                        position: absolute;
+                        z-index: 11;
+                        margin: 31% 35%;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.overlay{
+    background-color: #71cbcc;
+    position: absolute;
+    z-index: 10;
+    height: 211px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 10px;  
+    -webkit-border-radius: 10px    ;                                                     
+    -moz-border-radius: 10px    ;                                                     
+    -ms-border-radius: 10px  ;                                                      
+    -o-border-radius: 10px ; 
+}
+.overlay2{
+    background-color: #29b2fe;
+    position: absolute;
+    z-index: 10;
+    height: 211px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 10px;  
+    -webkit-border-radius: 10px    ;                                                     
+    -moz-border-radius: 10px    ;                                                     
+    -ms-border-radius: 10px  ;                                                      
+    -o-border-radius: 10px ; 
+}
+.overlay3{
+    background-color: #8a49a1;
+    position: absolute;
+    z-index: 10;
+    height: 211px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 10px;  
+    -webkit-border-radius: 10px    ;                                                     
+    -moz-border-radius: 10px    ;                                                     
+    -ms-border-radius: 10px  ;                                                      
+    -o-border-radius: 10px ; 
+}

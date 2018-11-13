@@ -1,0 +1,100 @@
+.service{
+    .service_content{
+        width: 90%;
+        margin: auto;
+        .service_header{
+            text-align: center;
+            padding-top: 5%;
+            .service_header_subtitle{
+                @include text($color-blue1,10px,bold);
+                letter-spacing: 5px;
+            }
+            .service_header_title{
+                @include text($color-blue2,30px,bold);
+            }
+            
+        }
+        .service_describe{
+            padding-top: 5%;
+            .box-service{
+                background-color: $color-gray;
+                border-radius: 5px;            ;
+                -webkit-border-radius: 5px            ;
+                -moz-border-radius: 5px            ;
+                -ms-border-radius: 5px            ;
+                -o-border-radius: 5px            ;
+                .box-service_content{
+                    width: 85%;
+                    margin: auto;
+                    text-align: center;
+                    padding: 23px;
+                    .title{
+                        @include text($color-blue2,20px,bold);
+                    }
+                    .box_detail{
+                        .title2{
+                            @include text($color-blue1,16px,normal);
+                        }
+                    }
+                    .box_icon{
+                        // height: 80px;
+                        img{
+                            height: 80px;
+                        }
+                        padding-top: 5%;
+                        transition: all 0.5s;
+                            -webkit-transition: all 0.5s;
+                            -moz-transition: all 0.5s;
+                            -ms-transition: all 0.5s;
+                            -o-transition: all 0.5s;
+                        &:hover{
+                            transform: translateY(-20%);
+                            -webkit-transform: translateY(-20%);
+                            -moz-transform: translateY(-20%);
+                            -ms-transform: translateY(-20%);
+                            -o-transform: translateY(-20%);
+                            transition: all 0.5s;
+                            -webkit-transition: all 0.5s;
+                            -moz-transition: all 0.5s;
+                            -ms-transition: all 0.5s;
+                            -o-transition: all 0.5s;
+                        }
+                    }
+                    .box_readmore{
+                        @include text($color-blue3,16px,bold);             
+                        padding-top: 10%;
+                        .box_readmore_content{
+                            
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                        
+                    }   
+                }
+            }
+        }
+        .find-solution{
+            padding-top: 5%;
+            padding-bottom: 3%;
+            p{
+                text-align: center;
+                @include text($color-blue1,15px,normal);
+                .dot{
+                    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+                    text-decoration: none;
+                    span{
+                        @include text($color-blue2,15px,normal);
+                        
+                    }
+                }
+            }
+        }
+        .service_logo{
+            justify-content: center;
+            justify-content: space-between;
+            padding-top: 4%;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+}
